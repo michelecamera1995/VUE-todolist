@@ -28,7 +28,10 @@ const app = new Vue({
            if (item.done === true){
                return 'barred' 
            }
-        }
+        },
+        removeElement: function (index) {
+            this.toDoList.splice(index.index, 1);
+          }
     }
 });
 

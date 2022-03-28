@@ -22,8 +22,8 @@
         <div>
             <ul>
                 <li v-for="(item,index) in toDoList" >
-                    <div :class="taskDone(item)" v-if="!isHidden">{{item.text}}</div>
-                    <div v-on:click="isHidden = true"><i class="fa-solid fa-x"></i></div>
+                    <div :class="taskDone(item)" >{{item.text}}</div>
+                    <div v-on:click="removeElement(index)"><i class="fa-solid fa-x"></i></div>
                 </li>
             </ul>
         </div>
