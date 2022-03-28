@@ -13,10 +13,6 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 
 */
 
-
-
-
-
 const app = new Vue({
     el: '#app',
     data: {
@@ -35,8 +31,10 @@ const app = new Vue({
         },
         addNewThingToList () {
             const inputWord = this.newListElement.trim()
-            this.toDoList.push(inputWord);
-            console.log(newListElement);
+            const newMember = {
+                text: inputWord,
+              }
+              this.toDoList.push(newMember);
         },
     }
 });
