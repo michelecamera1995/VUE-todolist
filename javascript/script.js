@@ -27,8 +27,6 @@ const app = new Vue({
         taskDone(item) {
            if (item.done === true){
                return 'barred' 
-           }else{
-            return 'red' 
            }
         }
     }
