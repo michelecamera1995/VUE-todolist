@@ -19,6 +19,8 @@
 <body>
     <div id="app">
         <h2>Lista delle cose da fare:</h2>
+        <input type="text" v-model="newListElement" placeholder="inserisci il nome!">
+        <button @click="addNewThingToList"></button>
         <div>
             <ul>
                 <li v-for="(item,index) in toDoList" >
