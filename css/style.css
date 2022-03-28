@@ -1,0 +1,18 @@
+
+	* {
+        box-sizing:border-box;
+        margin:0px;
+        padding:0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    .barred{
+        text-decoration: line-through;
+       
+    }   
+
+    .red{
+        background-color: red;
+       
+    }   
