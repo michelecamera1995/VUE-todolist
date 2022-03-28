@@ -16,9 +16,9 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 const app = new Vue({
     el: '#app',
     data: {
-        isHidden: false,
         toDoList: [{ text: 'fare esercizio', done: true }, { text: 'pulire', done: false }, { text: 'andare al supermercato', done: true },{ text: 'comprare i pomodori', done: false },],
         newListElement:'',
+        mycolor: '#'+(Math.random()*0xFFFFFF<<0).toString(16)
     },
     methods: {
         taskDone(item) {

@@ -5,14 +5,72 @@
         padding:0px;
         overflow-x: hidden;
         overflow-y: hidden;
+        font-family: 'Inconsolata', monospace;
     }
     
     .barred{
         text-decoration: line-through;
-       
+    }   
+
+    .container{
+        margin: 50px auto;
+        width: 1200px;
+    }   
+
+    .container h2{
+        font-size: 3.5rem;
+    }   
+
+    .input-block{
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+    }   
+
+    .input-block input{
+       width:500px ;
+       font-weight: bold;
+    }   
+
+
+    .input-block button{
+        width:200px;
+        text-align: center;
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 7px 20px;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 1px solid black;
+        font-size: 0.9rem;
+        margin-left: 1%;
+        font-weight: bold;
+  
+    }   
+
+    .task-block li{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 7px 20px;
+        text-decoration: none;
+        transition: all 250ms;
+        border: 1px solid black;
+        font-size: 1.2rem;
+        margin-top: 1%;
+        font-weight: bold;
+    }   
+
+    .task-block li div i {
+        margin-right: 5%;
+        color: red;
     }   
 
     .red{
         background-color: red;
        
     }   
+
+
