@@ -21,17 +21,23 @@ const app = new Vue({
     el: '#app',
     data: {
         isHidden: false,
-        toDoList: [{ text: 'fare esercizio', done: true }, { text: 'pulire', done: false }, { text: 'andare al supermercato', done: true },{ text: 'comprare i pomodori', done: false },]
+        toDoList: [{ text: 'fare esercizio', done: true }, { text: 'pulire', done: false }, { text: 'andare al supermercato', done: true },{ text: 'comprare i pomodori', done: false },],
+        newListElement:'',
     },
     methods: {
         taskDone(item) {
            if (item.done === true){
-               return 'barred' 
+               return 'barred' ;
            }
         },
-        removeElement: function (index) {
+        removeElement (index) {
             this.toDoList.splice(index.index, 1);
-          }
+        },
+        addNewThingToList () {
+            const inputWord = this.newListElement.trim()
+            this.toDoList.push(inputWord);
+            console.log(newListElement);
+        },
     }
 });
 
