@@ -28,7 +28,7 @@
         </div>
         <div class="task-block">
             <ul>
-                <li class="listTab"v-for="(item,index) in toDoList" :style="{backgroundColor: mycolor}">
+                <li class="listTab"v-for="(item,index) in toDoList" @click="taskCheck(index)" :style="{backgroundColor: mycolor}">
                     <div :class="taskDone(item)" >{{item.text}}</div>
                     <div v-on:click="removeElement(index)"><i class="fa-solid fa-x"></i></div>
                 </li>

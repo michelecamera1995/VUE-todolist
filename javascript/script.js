@@ -33,8 +33,13 @@ const app = new Vue({
             const inputWord = this.newListElement.trim()
             const newMember = {
                 text: inputWord,
+                done: false,
               }
               this.toDoList.push(newMember);
+        },
+        taskCheck (index) {
+            console.log(index);
+            this.toDoList[index].done = true;
         },
     }
 });
